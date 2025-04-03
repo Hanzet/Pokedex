@@ -12,7 +12,6 @@
 - **Detalles completos** de cada Pokémon.
 - **Rutas anidadas** para una navegación intuitiva.
 - **Context API** para manejo global del estado.
-- **Diseño responsive** (opcional, si lo tiene).
 
 ## 🔧 Tecnologías utilizadas
 
