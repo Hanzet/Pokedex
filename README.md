@@ -1,12 +1,39 @@
-# React + Vite
+# Pokédex en React ⚛️ + Pokémon API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a mi proyecto de Pokédex desarrollado con React! Esta aplicación consume la [PokéAPI](https://pokeapi.co/) para mostrar información sobre Pokémon, implementando diversas funcionalidades modernas de React.
 
-Currently, two official plugins are available:
+![Pokedex 1](https://github.com/user-attachments/assets/297a9184-3d19-4fcd-af3f-d3b2c1536495)
+![image](https://github.com/user-attachments/assets/834cdf0a-5254-4901-9eae-438307801721)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características principales
 
-## Expanding the ESLint configuration
+- **Búsqueda dinámica** de Pokémon por nombre.
+- **Filtros avanzados** por tipo (usando checkboxes).
+- **Detalles completos** de cada Pokémon.
+- **Rutas anidadas** para una navegación intuitiva.
+- **Context API** para manejo global del estado.
+- **Diseño responsive** (opcional, si lo tiene).
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔧 Tecnologías utilizadas
+
+- ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+- ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- (Otras que hayas usado: CSS, Tailwind, etc.)
+
+## ⚛️ React Hooks y Funcionalidades Implementadas
+
+### 🎣 Hooks Principales
+- **`useState`**: Para manejar el estado local (búsqueda, filtros, etc.).
+- **`useEffect`**: Para fetching de datos de la API y side effects.
+- **`useContext`**: Para compartir estado global (como favoritos o tema oscuro).
+
+### � React Router Dom v6
+- **Rutas anidadas**: Ej: `/pokemon/:id/detalles`.
+- **Params dinámicos**: Para mostrar Pokémon específicos (`/pokemon/:id`).
+- **`useLocation`**: Para tracking de navegación o análisis.
+- **`Navigate`**: Para redirecciones programáticas.
+
+### 🔎 Filtros y Búsqueda
+- **Checkbox interactivos**: Filtra Pokémon por tipo (agua, fuego, etc.).
+- **Búsqueda en tiempo real**: Actualiza resultados al escribir.
