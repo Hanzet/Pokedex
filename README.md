@@ -1,6 +1,7 @@
 # Pokédex en React ⚛️ + Pokémon API
 
-¡Bienvenido a mi proyecto de Pokédex desarrollado con React! Esta aplicación consume la [PokéAPI](https://pokeapi.co/) para mostrar información sobre Pokémon, implementando diversas funcionalidades modernas de React.
+# Sitio:
+https://pokedex-hanzet.netlify.app/
 
 ![Pokedex 1](https://github.com/user-attachments/assets/297a9184-3d19-4fcd-af3f-d3b2c1536495)
 ![image](https://github.com/user-attachments/assets/834cdf0a-5254-4901-9eae-438307801721)
