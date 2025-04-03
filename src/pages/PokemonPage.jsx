@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Loader from '../components/Loader';
+import { Loader } from '../components';
 import { PokemonContext } from '../context/PokemonContext';
 import { primerMayuscula } from '../helper/helper';
 
 export const PokemonPage = () => {
-	const { getPokemonById } = useContext(PokemonContext);
+	const { getPokemonByID } = useContext(PokemonContext);
 
 	const [loading, setLoading] = useState(true);
 	const [pokemon, setPokemon] = useState({});
@@ -13,7 +13,7 @@ export const PokemonPage = () => {
 	const { id } = useParams();
 
 	const fetchPokemon = async id => {
-		const data = await getPokemonById(id);
+		const data = await getPokemonByID(id);
 		setPokemon(data);
 		setLoading(false);
 	};

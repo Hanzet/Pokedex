@@ -1,24 +1,21 @@
 import { useContext } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import { PokemonContext } from '../context/PokemonContext';
-// import logo from '../assets/Pokédex_logo.png'
+import logo from '../assets/Pokédex_logo.png'
 
 export const Navigation = () => {
-
-	const context = useContext(PokemonContext);
-
 	const { onInputChange, valueSearch, onResetForm } =
 		useContext(PokemonContext);
 
 	const navigate = useNavigate();
 
 	const onSearchSubmit = e => {
-		e.preventDefault(); // Evita que se recargue la página
-		navigate('/search', { // En las options del navigate puedo pasar un state y en el state le pasamos el valueSearch que es lo que estamos escribiendo en el input de busqueda
+		e.preventDefault();
+		navigate('/search', {
 			state: valueSearch,
 		});
 
-		onResetForm(); // Reinicia el input cada vez que se envía el formulario (buscar pokemones o enter en el input)
+		onResetForm();
 	};
 
 	return (
@@ -30,6 +27,7 @@ export const Navigation = () => {
 						alt='Logo Pokedex'
 					/>
 				</Link>
+
 				<form onSubmit={onSearchSubmit}>
 					<div className='form-group'>
 						<svg

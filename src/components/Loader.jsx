@@ -2,7 +2,7 @@ import React from 'react'
 import { JellyTriangle } from 'ldrs/react'
 import 'ldrs/react/JellyTriangle.css'
 
-const Loader = () => {
+export const Loader = () => {
   return (
     <div className="container-loader">
       <JellyTriangle
@@ -13,5 +13,3 @@ const Loader = () => {
     </div>
   )
 }
-
-export default Loader
