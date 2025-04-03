@@ -1,6 +1,6 @@
 # Pokédex en React ⚛️ + Pokémon API
 
-🔹 **Aplicación:
+🔹 Aplicación:
 https://pokedex-hanzet.netlify.app/
 
 ![Pokedex 1](https://github.com/user-attachments/assets/297a9184-3d19-4fcd-af3f-d3b2c1536495)
